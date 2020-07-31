@@ -76,4 +76,12 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 
 # show the output image
 cv2.imshow("Image", image)
+
 cv2.waitKey(0)
+####new chau code
+
+filename = 'savedImage.jpg'
+ 
+# Using cv2.imwrite() method 
+# Saving the image 
+cv2.imwrite(filename, image) 
